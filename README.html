@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  kalkulator
+</head>
+<body>
+  kalkulator js
+</body>
+<script language="JavaScript">
+  const operator = prompt('wybierz działanie (+, -, * lub / ): ');
+
+const number1 = parseFloat(prompt('Podaj pierwszą liczbę: '));
+const number2 = parseFloat(prompt('Podaj drugą liczbę: '));
+
+let result;
+
+if (operator == '+') {
+    result = number1 + number2;
+}
+else if (operator == '-') {
+    result = number1 - number2;
+}
+else if (operator == '*') {
+    result = number1 * number2;
+}
+else {
+    result = number1 / number2;
+}
+
+console.log(`${number1} ${operator} ${number2} = ${result}`);
+</script>
+</html>
